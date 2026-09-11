@@ -4,13 +4,9 @@
         {{-- Brand column --}}
         <div>
             <div class="flex items-center gap-3 mb-5">
-                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-onyx font-serif font-bold text-sm ring-2 ring-gold/40">
-                    GM
-                </div>
-                <div class="flex flex-col leading-none">
-                    <span class="font-serif text-base font-bold text-chalk">Gunting Master</span>
-                    <span class="text-[10px] font-medium tracking-widest text-gold uppercase">Barbershop</span>
-                </div>
+                <img src="{{ asset('images/logo.png') }}"
+                     alt="Gunting Master Barbershop"
+                     class="h-14 w-auto object-contain">
             </div>
             <p class="text-sm text-chalk/55 leading-relaxed">
                 Professional haircuts, clean fades, and expert grooming for every gentleman — located in the heart of Lumban, Laguna.

@@ -1,6 +1,5 @@
 @props([
     'mainImage'   => 'https://placehold.co/900x560/1A1A1A/C9A84C?text=Barbershop+Interior',
-    'sideImage'   => 'https://placehold.co/300x600/2E2E2E/C9A84C?text=Barber+Station',
     'highlights'  => [],
 ])
 
@@ -26,18 +25,8 @@
                      class="w-full h-auto object-cover">
             </div>
 
-            {{-- Side image + highlights --}}
-            <div class="lg:col-span-2 flex flex-col items-center lg:items-start gap-8">
-
-                <div class="relative">
-                    <img src="{{ $sideImage }}"
-                         alt="Barber station at Gunting Master"
-                         class="w-44 rounded-2xl shadow-xl shadow-onyx/15 ring-1 ring-onyx/8 object-cover">
-                    <div class="absolute -bottom-3 -right-3 bg-gold text-onyx rounded-xl px-3 py-2 text-xs font-bold shadow-md">
-                        Pro Setup
-                    </div>
-                </div>
-
+            {{-- Highlights --}}
+            <div class="lg:col-span-2 flex flex-col gap-6">
                 <ul class="space-y-4 w-full">
                     @foreach($highlights as $highlight)
                         <li class="flex items-start gap-3 text-sm text-onyx/70">
@@ -46,8 +35,8 @@
                         </li>
                     @endforeach
                 </ul>
-
             </div>
+
         </div>
 
     </div>

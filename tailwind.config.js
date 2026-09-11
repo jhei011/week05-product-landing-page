@@ -4,6 +4,16 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
   ],
+  safelist: [
+    { pattern: /bg-(chalk|onyx|gold)/ },
+    { pattern: /text-(chalk|onyx|gold)/ },
+    { pattern: /border-(chalk|onyx|gold)/ },
+    { pattern: /ring-(chalk|onyx|gold)/ },
+    { pattern: /shadow-(chalk|onyx|gold)/ },
+    { pattern: /from-(chalk|onyx|gold)/ },
+    { pattern: /to-(chalk|onyx|gold)/ },
+    { pattern: /via-(chalk|onyx|gold)/ },
+  ],
   theme: {
     extend: {
       colors: {

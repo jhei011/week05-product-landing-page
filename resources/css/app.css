@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force scan all blade files regardless of path */
+@source "../../resources/views/**/*.blade.php";
+
 [x-cloak] {
     display: none !important;
+}
+
+@layer base {
+    body {
+        background-color: #F5F5F0;
+        color: #1A1A1A;
+    }
+}
+
+@layer components {
+    /* Force Tailwind to include all custom color utilities */
+    .bg-chalk { background-color: #F5F5F0; }
+    .bg-onyx { background-color: #1A1A1A; }
+    .bg-onyx-light { background-color: #2E2E2E; }
+    .bg-onyx-muted { background-color: #4A4A4A; }
+    .bg-gold { background-color: #C9A84C; }
+    .bg-gold-dark { background-color: #A8862E; }
+    .bg-gold-light { background-color: #E8C96A; }
+
+    .text-chalk { color: #F5F5F0; }
+    .text-onyx { color: #1A1A1A; }
+    .text-onyx-light { color: #2E2E2E; }
+    .text-onyx-muted { color: #4A4A4A; }
+    .text-gold { color: #C9A84C; }
+    .text-gold-dark { color: #A8862E; }
+    .text-gold-light { color: #E8C96A; }
+
+    .border-chalk { border-color: #F5F5F0; }
+    .border-onyx { border-color: #1A1A1A; }
+    .border-gold { border-color: #C9A84C; }
+    .border-gold-dark { border-color: #A8862E; }
+
+    .ring-chalk { --tw-ring-color: #F5F5F0; }
+    .ring-onyx { --tw-ring-color: #1A1A1A; }
+    .ring-gold { --tw-ring-color: #C9A84C; }
+
+    .shadow-onyx { --tw-shadow-color: #1A1A1A; }
+    .shadow-gold { --tw-shadow-color: #C9A84C; }
+
+    .from-gold { --tw-gradient-from: #C9A84C; }
+    .to-onyx { --tw-gradient-to: #1A1A1A; }
+
+    .font-serif { font-family: "Playfair Display", ui-serif, Georgia; }
+    .font-sans { font-family: "Inter", ui-sans-serif, system-ui; }
 }

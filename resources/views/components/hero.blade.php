@@ -4,7 +4,7 @@
     'description'  => "Gunting Master Barbershop delivers precision haircuts, clean fades, and expert grooming in the heart of Lumban, Laguna. Walk in and walk out looking your best — every single time.",
     'primaryCta'   => 'Get Directions',
     'secondaryCta' => 'See Our Services',
-    'image'        => 'https://placehold.co/640x760/1A1A1A/C9A84C?text=Gunting+Master%0ABarbershop',
+    'image'        => '/images/portrait.png',
 ])
 
 <section id="home" class="relative overflow-hidden bg-chalk">

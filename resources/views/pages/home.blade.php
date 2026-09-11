@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-layouts.app>
 
     {{-- ── HERO ───────────────────────────────────────────────── --}}
     <x-hero />
@@ -54,8 +54,7 @@
 
     {{-- ── SHOWCASE ─────────────────────────────────────────────── --}}
     <x-product-showcase
-        mainImage="public/images/interior.png"
-        sideImage="public/images/interior.png"
+        mainImage="{{ asset('images/interior.png') }}"
         :highlights="[
             'Clean, professional environment maintained daily',
             'Experienced barbers skilled across all hair types',
@@ -163,4 +162,4 @@
     {{-- ── CTA ───────────────────────────────────────────────────── --}}
     <x-cta />
 
-</x-app-layout>
+</x-layouts.app>
